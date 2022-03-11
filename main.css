@@ -1,0 +1,129 @@
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }   
+
+  .content-section {
+      background-color:#FFD4E9; 
+      margin: .5px;
+      border-color:white;
+      border-width: 1px;
+      border-radius: 5px;
+  }  
+  
+  .header {
+      padding: 5px;
+      background-color: #FFD4E9;
+      text-align:center;
+  }
+
+  .number{
+    background-color: #62ccbc;
+    font-size: x-large;
+    text-align:center;
+  
+}
+    
+  
+
+  ul {
+      list-style:none;
+      text-align: left;
+  }
+ 
+  .quiz-container {
+    background-color:white;
+    color: black;
+    font-weight:normal;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 50px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 2px solid #1C9986;
+
+
+
+  }
+
+  .center {
+      margin: auto;
+      width: 50%;
+      border: 3px solid green;
+      padding: 10px;
+    } 
+
+  .float-right {
+      float:right;
+  }
+
+  .sleep-blog {
+    background-color:white;
+    color: black;
+    font-weight:normal;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border: 2px solid #1C9986;
+} 
+
+  .content-button {
+    background-color:#CC62CC ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    
+}
+
+
+.hero-section {
+            
+            background-color: #62CCBC;
+            
+}
+
+.button2 {
+    background-color:#FFD4E9;
+    color: black;
+    font-weight:normal;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.button3 {
+    background-color:white;
+    color: black;
+    font-weight:normal;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border: 2px solid #1C9986;
+
+}
