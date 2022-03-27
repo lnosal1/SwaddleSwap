@@ -1,4 +1,4 @@
-// define the callAPI function that takes a first name and last name as parameters
+// define the callAPI function that takes quiz answers as parameters
 var quizAPI = (Q1Size,Q2Climate,Q3Roll,Q4Arms)=>{
     // instantiate a headers object
     var myHeaders = new Headers();
@@ -31,7 +31,7 @@ var btn = document.getElementById("emailmodal");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+var launchmodal = function() {
   modal.style.display = "block";
 }
 
