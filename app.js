@@ -40,6 +40,6 @@ var userAPI = (fName,lName,email)=>{
     // make API call with parameters and use promises to get response
     fetch("https://nsc5shfxpi.execute-api.us-east-1.amazonaws.com/prod", requestOptions)
     .then(response => response.text())
-    //.then(result => alert(JSON.parse(result).body))
+    .then(result => alert(JSON.parse(result).body))
     .catch(error => console.log('error', error));
 }
