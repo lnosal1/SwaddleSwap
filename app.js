@@ -28,9 +28,9 @@ var userAPI = (fName,lName,email)=>{
     // add content type header to object
     myuserHeaders.append("Content-Type", "application/json");
     // using built in JSON utility package turn object to string and store in a variable
-    var userinfo = JSON.stringify({"FirstName":fName,"LastName":lName, "Email":email});
+    var userinfo = JSON.stringify({"fName":fName,"lName":lName, "email":email});
 
-    // create a JSON object with parameters for API call and store in a variable
+    // create a JSON object with parameters for API call and store in a variale
     var requestOptions = {
         method: 'POST',
         headers: myuserHeaders,
