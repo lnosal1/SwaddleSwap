@@ -43,3 +43,24 @@ var userAPI = (fName,lName,email)=>{
     .then(result => alert(JSON.parse(result).body))
     .catch(error => console.log('error', error));
 }
+
+// define the callAPI function that takes quiz answers as parameters
+var swaddleAPI = ()=>{
+    // instantiate a headers object
+    var myuserHeaders = new Headers();
+    // add content type header to object
+    myuserHeaders.append("Content-Type", "application/json");
+    // using built in JSON utility package turn object to string and store in a variable
+
+    // create a JSON object with parameters for API call and store in a variale
+    var requestOptions = {
+        method: 'GET',
+        headers: myuserHeaders,
+        redirect: 'follow'
+    };
+    // make API call with parameters and use promises to get response
+    fetch(" https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/swaddle", requestOptions)
+    .then(response => response.text())
+    .then(result => alert(JSON.parse(result).body))
+    .catch(error => console.log('error', error));
+}
