@@ -62,5 +62,6 @@ var swaddleAPI = ()=>{
     fetch(" https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under 3M&arms=down", requestOptions)
     .then(response => response.text())
     .then(result => JSON.parse(result))
+    .then(result => document.write(result))
     .catch(error => console.log('error', error));
 }
