@@ -3,7 +3,7 @@ $(document).ready(function(){
 	// Define variables that reference our script tags within the body of our page
     var sleepBlog = $("#sleepBlog").html();
     //call swaddleAPI
-    var API = swaddleAPI(); 
+    var API = $.getScript("app.js", swaddleAPI()); 
     
 	// Have MustacheJS render our script tags
     
