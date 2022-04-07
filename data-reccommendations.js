@@ -5,7 +5,7 @@ $(document).ready(function(){
     //call swaddleAPI
     var data = fetch('app.js');
 
-    var API = JSON.parse(swaddleAPI())
+    var API = JSON.parse(swaddleAPI()).body
 	// Have MustacheJS render our script tags
     
     Mustache.parse(sleepBlog);
