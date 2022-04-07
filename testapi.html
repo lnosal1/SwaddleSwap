@@ -16,7 +16,20 @@
 <body>
     <div id="myData"></div>
     <script>
-        fetch(" https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under 3M&arms=down")
+        {
+    // instantiate a headers object
+    var myswaddleHeaders = new Headers();
+    // add content type header to object
+    myswaddleHeaders.append("Content-Type", "application/json");
+    // using built in JSON utility package turn object to string and store in a variable
+
+    // create a JSON object with parameters for API call and store in a variable
+    var requestOptions = {
+        method: 'GET',
+        headers: myswaddleHeaders,
+        redirect: 'follow'
+    };
+        fetch(" https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under 3M&arms=down",requestOptions)
             .then(function (response) {
                 return response.json();
             })
@@ -33,7 +46,7 @@
                 div.innerHTML = 'Name: ' + data[i].displayName + ' ' + data[i].arms;
                 mainContainer.appendChild(div);
             }
-        }
+        }}
     </script>
 </body>
 </html>
