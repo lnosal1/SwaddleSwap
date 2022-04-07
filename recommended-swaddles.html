@@ -34,7 +34,11 @@
     </script>
         <!-- Just an image -->
         <script>
-            swaddleAPI()
+        swaddleAPI() = fetch(" https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under 3M&arms=down", requestOptions)
+    .then(response => response.text())
+    .then(result => JSON.parse(result).body)
+    .catch(error => console.log('error', error));
+    document.write (swaddleAPI())
         </script>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
