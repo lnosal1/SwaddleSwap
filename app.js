@@ -59,8 +59,14 @@ var swaddleAPI = ()=>{
         //redirect: 'follow'
     //};
     // make API call with parameters and use promises to get response
-    fetch(" https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under 3M&arms=down", requestOptions)
+    fetch(" https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under 3M&arms=down")
     .then(response => response.text())
     .then(result => JSON.parse(result).body)
-    .catch(error => console.log('error', error));
+    .then(function (data) {
+        appendData(data);
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+    //.catch(error => console.log('error', error));
 }
