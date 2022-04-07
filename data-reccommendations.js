@@ -3,7 +3,9 @@ $(document).ready(function(){
 	// Define variables that reference our script tags within the body of our page
     var sleepBlog = $("#sleepBlog").html();
     //call swaddleAPI
-    var data = fetch('appTEST.js');
+    var data = fetch('app.js');
+
+    var API = swaddleAPI();
 
     
     Mustache.parse(sleepBlog);
@@ -11,7 +13,7 @@ $(document).ready(function(){
 	
 	// Define our data objects
 
-    var sleepingBlog = Mustache.render(sleepBlog, data
+    var sleepingBlog = Mustache.render(sleepBlog, API
     );
 	
 	
