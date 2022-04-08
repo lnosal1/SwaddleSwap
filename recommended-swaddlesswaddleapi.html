@@ -53,8 +53,11 @@
   </nav>
     <H1 class = "header">Your Recommended Swaddles</H1>
     <script>
-        var swaddleAPI = swaddleAPI();
-    document.write("api output", swaddleAPI)
+        var swaddleAPI = fetch("https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under 3M&arms=down", requestOptions)
+    .then(response => response.text())
+    .then(result => JSON.stringify(result).body)
+    .catch(error => console.log('error', error));
+    document.write(swaddleAPI)
     </script>
     <div class = "container">
         <div class = "row" id="render_sleepBlog"></div>
