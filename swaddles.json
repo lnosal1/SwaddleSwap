@@ -1,4 +1,4 @@
-[
+{"Item":[
     {"displayName": "SwaddleMe Pod", 
     "buttonText": "Buy on Amazon", 
     "arms": "down", 
@@ -13,4 +13,4 @@
     "buyLink": "test", 
     "imageLink":"test",
     "material": "cotton"}
-   ]
+   ]}
