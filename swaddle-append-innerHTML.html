@@ -71,18 +71,13 @@
             });
         function appendData(data) {
             var mainContainer = document.getElementById("myData");
-            var secondContainer = document.getElementById("button");
-            var thirdContainer = document.getElementById("container");
             for (var i = 0; i < data.length; i++) {
                 var div = document.createElement("div");
                 var Name = data[i].displayName;
                 var arms = data[i].arms;
-                div.innerHTML = 'Name: ' + Name;
-                div2.innerHTML = "arms: " + arms;
-                var div2 = document.createElement("div");
-                               
+                div.innerHTML = 'Name: ' + Name;           
                 mainContainer.appendChild(div);
-                secondContainer.appendChild(div2);
+                
             }
         }
 
