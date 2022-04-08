@@ -36,8 +36,8 @@
             var mainContainer = document.getElementById("myData");
             for (var i = 0; i < data.length; i++) {
                 var div = document.createElement("div");
-                div.innerHTML = 'Name: ' + data[i].Items.displayName + ' ' + data[i].Items.rollboth +
-                'Link: ' + data[i].Items.buyLink;
+                div.innerHTML = 'Name: ' + data[i].Item.displayName + ' ' + data[i].Item.rollboth +
+                'Link: ' + data[i].Item.buyLink;
                 mainContainer.appendChild(div);
             }
         }
