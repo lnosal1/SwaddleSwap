@@ -70,10 +70,13 @@
         function appendData(data) {
             var mainContainer = document.getElementById("myData1");
                 var div1 = document.createElement("h2");
+                var img = document.createElement("div");
                 var Name = data[1].displayName;
-                var arms = data[1].arms;
-                div1.innerHTML = Name;           
+                var imageLink = data[1].imageLink;
+                div1.innerHTML = Name; 
+                img.innerHTML = "<img src=" +imageLink +"class='img-thumbnail'>";          
                 mainContainer.appendChild(div1);
+                mainContainer.appendChild(img);
                 
             
         }
