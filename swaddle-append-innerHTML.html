@@ -52,7 +52,7 @@
       </nav>
         <H1 class = "header">Your Recommended Swaddles</H1>
 
-            <div id="myData1" class="col-sm-4 text-center sleep-blog" style = "padding:5px">
+            <div id="myData" class="col-sm-4 text-center sleep-blog" style = "padding:5px">
             </div>
             <div id="myData2" class="col-sm-4 text-center sleep-blog" style = "padding:5px"></div>
         
@@ -68,9 +68,8 @@
                 console.log('error: ' + err);
             });
         function appendData(data) {
-            
+            var mainContainer = document.getElementById("myData");
             for (var i = 0; i < data.length; i++) {
-                var mainContainer = document.getElementById("myData"+[i]);
                 var div = document.createElement("div");
                 var Name = data[i].displayName;
                 var arms = data[i].arms;
