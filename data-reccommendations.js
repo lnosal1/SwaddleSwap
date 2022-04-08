@@ -5,13 +5,15 @@ $(document).ready(function(){
     //call swaddleAPI
     var data = $.getJSON('swaddles.json');
 
+    var datastring = JSON.stringify(data);
+
     
     Mustache.parse(sleepBlog);
 
 	
 	// Define our data objects
 
-    var sleepingBlog = Mustache.render(sleepBlog, data
+    var sleepingBlog = Mustache.render(sleepBlog, datastring
     );
 	
 	
