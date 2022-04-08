@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Swaddle Quiz | Swaddle Swap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <script type="text/javascript" src="mustache-1.js"></script>
+    
+    <script type="text/javascript" src="jquery-3.3.1-1.min.js"></script>    
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="data-1.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+    
+    <h1>Authors</h1>
+<ul id="authors"></ul>
+
+<script>
+  const ul = document.getElementById('authors');
+  const list = document.createDocumentFragment();
+  const url = 'https://jsonplaceholder.typicode.com/users';
+
+  fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      let authors = data;
+
+      authors.map(function(author) {
+        let li = document.createElement('li');
+        let name = document.createElement('h2');
+        let email = document.createElement('span');
+
+        name.innerHTML = `${author.name}`;
+        email.innerHTML = `${author.email}`;
+
+        li.appendChild(name);
+        li.appendChild(email);
+        list.appendChild(li);
+      });
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+
+  ul.appendChild(list);
+</script>
+    
+</body>
+
+</html>
