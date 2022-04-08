@@ -74,9 +74,10 @@
                 var Name = data[1].displayName;
                 var imageLink = data[1].imageLink;
                 div1.innerHTML = Name; 
-                img.innerHTML = "<img src=" +imageLink +"class='img-thumbnail'>";          
+                img.innerHTML = "<img src=" +imageLink +"class='img-thumbnail'>";
+                mainContainer.appendChild(img);          
                 mainContainer.appendChild(div1);
-                mainContainer.appendChild(img);
+                
                 
             
         }
