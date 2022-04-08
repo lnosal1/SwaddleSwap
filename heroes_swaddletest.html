@@ -26,13 +26,15 @@
         const request = new Request(requestURL);
 
         const response = await fetch(request);
-        const superHeroes = await response.json();
+        const superHeroesText = await response.text();
 
-        //populateHeader(superHeroes);
-        //populateHeroes(superHeroes);
+        const superHeroes = JSON.parse(superHeroesText);
+//populateHeader(superHeroes);
+//populateHeroes(superHeroes);
 
-        }
-        populate();
+}
+
+       document.write(populate());
        
 
       </script>
