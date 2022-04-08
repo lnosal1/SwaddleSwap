@@ -68,7 +68,7 @@ var swaddleAPI = ()=>{
 }
 
 function renderJoke(data) {
-    const setup = document.getElementById("displayname");
+    const setup = document.getElementById("displayName");
     const punchline = document.getElementById("arms");
     displayName.innerHTML = data.displayName;
     arms.innerHTML = data.arms;
