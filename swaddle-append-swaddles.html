@@ -36,7 +36,8 @@
             var mainContainer = document.getElementById("myData");
             for (var i = 0; i < data.length; i++) {
                 var div = document.createElement("div");
-                div.innerHTML = 'Name: ' + data[i].displayName + ' ' + data[i].rollboth +
+                var Name = data[i].displayName
+                div.innerHTML = 'Name: ' + Name + ' ' + data[i].rollboth +
                 'Link: ' + data[i].buyLink;
                 mainContainer.appendChild(div);
             }
