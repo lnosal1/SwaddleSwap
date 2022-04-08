@@ -10,7 +10,7 @@ $(document).ready(function(){
 	
 	// Define our data objects
 
-  var sleepingBlog = Mustache.render(sleepBlog, {Items: [{displayName: "SwaddleMe Pod", buttonText: "Buy on Amazon", arms: "down", rollboth: "no", buyLink: "test", imageLink:"test",material: "cotton"},{displayName: "SwaddleMe Pod", buttonText: "Buy on Amazon", arms: "down", rollboth: "no", buyLink: "test", imageLink:"test",material: "cotton"}]
+  var sleepingBlog = Mustache.render(sleepBlog, {Items: [{displayName: "SwaddleMe Pod", buttonText: "Buy on Amazon", arms: "down", rollboth: "no", buyLink: "test", imageLink:"test",material: "cotton"},{displayName: "SwaddleMe Pod", buttonText: "Buy on Amazon", arms: "down", rollboth: "no", buyLink: "test", imageLink:"test",material: "cotton"}, {displayName: "SwaddleMe Pod", buttonText: "Buy on Amazon", arms: "down", rollboth: "no", buyLink: "test", imageLink:"test",material: "cotton"}, {displayName: "SwaddleMe Pod", buttonText: "Buy on Amazon", arms: "down", rollboth: "no", buyLink: "test", imageLink:"test",material: "cotton"}, {displayName: "SwaddleMe Pod", buttonText: "Buy on Amazon", arms: "down", rollboth: "no", buyLink: "test", imageLink:"test",material: "cotton"}, {displayName: "SwaddleMe Pod", buttonText: "Buy on Amazon", arms: "down", rollboth: "no", buyLink: "test", imageLink:"test",material: "cotton"}]
 });
 	
 	
