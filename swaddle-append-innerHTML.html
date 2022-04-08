@@ -68,9 +68,12 @@
             var mainContainer = document.getElementById("myData");
             for (var i = 0; i < data.length; i++) {
                 var div = document.createElement("div");
-                var Name = data[i]
+                var Name = data[i].displayName
                 div.innerHTML = 'Name: ' + Name;
                 mainContainer.appendChild(div);
+                var div2 = document.createElement("div");
+                var arms = data[i].arms
+                div2.innerHTML = "arms: " + arms;
             }
         }
 
