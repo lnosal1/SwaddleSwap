@@ -37,6 +37,7 @@
             for (var i = 0; i < data.length; i++) {
                 var div = document.createElement("div");
                 div.innerHTML = 'Name: ' + data[i].displayName + ' ' + data[i].rollboth;
+                div.innerHTML= 'Link: ' + data[i].buttonLink;
                 mainContainer.appendChild(div);
             }
         }
