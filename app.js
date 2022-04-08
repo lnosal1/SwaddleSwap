@@ -60,16 +60,8 @@ var swaddleAPI = ()=>{
     };
     // make API call with parameters and use promises to get response
     fetch("https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under 3M&arms=down", requestOptions)
-    //.then(response => response.text())
-    //.then(result => alert(JSON.parse(result).body))
-    .then((response) => response.json())
-    .then((data) => renderJoke(data))
+    .then(response => response.text())
+    .then(result => alert(JSON.parse(result).body))
     .catch(error => console.log('error', error));
 }
 
-function renderJoke(data) {
-    const setup = document.getElementById("displayName");
-    const punchline = document.getElementById("arms");
-    displayName.innerHTML = data.displayName;
-    arms.innerHTML = data.arms;
-  }
