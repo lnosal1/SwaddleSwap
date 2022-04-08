@@ -54,7 +54,14 @@
   <h1 class="header">Rent Swaddles: Try Before You Buy</h1>
   <h2>Recommended for You:</h2>
     <div>
-        <script>p()</script>
+        <script>const p = document.getElementById("myPelement")
+            fetch('https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under 3M&arms=down')
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    p.innerText = data
+                });</script>
 
     </div>
     <div class = "container">
