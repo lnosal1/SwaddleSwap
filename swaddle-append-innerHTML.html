@@ -52,9 +52,7 @@
       </nav>
         <H1 class = "header">Your Recommended Swaddles</H1>
         <div class= "col-sm-4" style = "padding:5px">  
-        <div id="container" class= "text-center sleep-blog">
-
-            <div id="myData">
+            <div id="myData" class= "text-center sleep-blog">
                 <div id="button"></div>
             </div>
         </div>
@@ -78,13 +76,12 @@
                 var div = document.createElement("div");
                 var Name = data[i].displayName;
                 div.innerHTML = 'Name: ' + Name;
-                mainContainer.appendChild(div);
+                
                 var div2 = document.createElement("div");
                 var arms = data[i].arms;
                 div2.innerHTML = "arms: " + arms;
+                mainContainer.appendChild(div);
                 secondContainer.appendChild(div2);
-                var div3 = document.createElement("div");
-                thirdContainer = appendChild(div3);
             }
         }
 
