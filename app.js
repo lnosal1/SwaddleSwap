@@ -51,16 +51,25 @@ var swaddleAPI = ()=>{
     // add content type header to object
     myswaddleHeaders.append("Content-Type", "application/json");
     // using built in JSON utility package turn object to string and store in a variable
-
     // create a JSON object with parameters for API call and store in a variable
     var requestOptions = {
         method: 'GET',
         headers: myswaddleHeaders,
         redirect: 'follow'
+        
     };
     // make API call with parameters and use promises to get response
-    fetch(" https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under 3M&arms=down", requestOptions)
-    .then(response => response.text())
-    .then(result => alert(JSON.parse(result).body))
+    fetch("https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under 3M&arms=down", requestOptions)
+    //.then(response => response.text())
+    //.then(result => alert(JSON.parse(result).body))
+    .then((response) => response.json())
+    .then((data) => renderJoke(data))
     .catch(error => console.log('error', error));
 }
+
+function renderJoke(data) {
+    const setup = document.getElementById("displayname");
+    const punchline = document.getElementById("arms");
+    displayName.innerHTML = data.displayName;
+    arms.innerHTML = data.arms;
+  }
