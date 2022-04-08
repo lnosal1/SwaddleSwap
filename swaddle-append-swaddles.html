@@ -37,8 +37,10 @@
             for (var i = 0; i < data.length; i++) {
                 var div = document.createElement("div");
                 var Name = data[i].displayName
-                div.innerHTML = 'Name: ' + Name + ' ' + data[i].rollboth +
-                'Link: ' + data[i].buyLink;
+                var buyLink = data[i].buyLink
+                var rollboth = data[i].rollboth
+                div.innerHTML = 'Name: ' + Name + ' ' + rollboth + ' ' +
+                'Link: ' + buyLink;
                 mainContainer.appendChild(div);
             }
         }
