@@ -62,20 +62,20 @@
             .then(function (response) {
                 return response.json();})
              
-            .then(function (Items) {
-                appendData(Items);
+            .then(function (data) {
+                appendData(data);
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
-        function appendData(Items) {
+        function appendData(data) {
             var mainContainer = document.getElementById("myData1");
                 var div1 = document.createElement("h2");
                 var img = document.createElement("div");
                 var button = document.createElement("div");
-                var Name = Items[0].displayName[0];
-                var imageLink = Items[0].imageLink[0];
-                var buttonLink = Items[0].buyLink[0];
+                var Name = data[Items][0].displayName;
+                var imageLink = data[Items][0].imageLink;
+                var buttonLink = data[Items][0].buyLink;
                 div1.innerHTML = Name; 
                 img.innerHTML = "<img src='" + imageLink+ "' class='img-thumbnail' >";
                 button.innerHTML = "<a href='" +buttonLink + "><button type='button' class='content-button'>Buy on Amazon</button></a>";
