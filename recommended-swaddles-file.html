@@ -63,6 +63,7 @@
             const urlParams = new URLSearchParams(queryString);
             const quizanswers = urlParams.get('quizanswers')
             console.log(quizanswers);
+
             fetch('swaddles.json')
             .then(function (response) {
                 return response.json();
@@ -78,9 +79,9 @@
                 var div1 = document.createElement("h2");
                 var img = document.createElement("div");
                 var button = document.createElement("div");
-                var Name = data['downyescotton'][0].displayName;
-                var imageLink = data['downyescotton'][0].imageLink;
-                var buttonLink = data['downyescotton'][0].buyLink;
+                var Name = data[quizanswers][0].displayName;
+                var imageLink = data[quizanswers][0].imageLink;
+                var buttonLink = data[quizanswers][0].buyLink;
                 div1.innerHTML = Name; 
                 img.innerHTML = "<img src='" + imageLink+ "' class='img-thumbnail' >";
                 button.innerHTML = "<a href='" +buttonLink + "><button type='button' class='content-button'>Buy on Amazon</button></a>";
