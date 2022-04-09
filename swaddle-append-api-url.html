@@ -60,7 +60,7 @@
     <script>
             fetch('https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under%203M&arms=down')
             .then(function (response) {
-                return response.json().body;})
+                return response.json();})
              
             .then(function (data) {
                 appendData(data);
@@ -73,9 +73,9 @@
                 var div1 = document.createElement("h2");
                 var img = document.createElement("div");
                 var button = document.createElement("div");
-                var Name = data['Items'][0].displayName;
-                var imageLink = data['Items'][0].imageLink;
-                var buttonLink = data['Items'][0].buyLink;
+                var Name = data['body']['Items'][0].displayName;
+                var imageLink = data['body']['Items'][0].imageLink;
+                var buttonLink = data['body']['Items'][0].buyLink;
                 div1.innerHTML = Name; 
                 img.innerHTML = "<img src='" + imageLink+ "' class='img-thumbnail' >";
                 button.innerHTML = "<a href='" +buttonLink + "><button type='button' class='content-button'>Buy on Amazon</button></a>";
