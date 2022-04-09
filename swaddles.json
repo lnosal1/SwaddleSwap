@@ -11,6 +11,6 @@
     "arms": "down", 
     "rollboth": "no", 
     "buyLink": "test", 
-    "imageLink":"src='swaddlepod.jpg' class='img-thumbnail'",
+    "imageLink":"swaddlepod.jpg",
     "material": "cotton"}
    ]
