@@ -63,6 +63,8 @@
             const urlParams = new URLSearchParams(queryString);
             const quizanswers = urlParams.get('quizanswers')
             console.log(quizanswers);
+            jsarray = JSON.parse(sessionStorage.getItem("jsArray"));
+            console.log(jsarray)
 
             fetch('swaddles.json')
             .then(function (response) {

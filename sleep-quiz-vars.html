@@ -139,18 +139,20 @@
             </form>
         </div>
         <script>
-            var fName = document.getElementById('fName').value;
-            var lName = document.getElementById('lName').value;
             var email = document.getElementById('email').value; 
             var size = document.querySelector('input[name=size]:checked').value;
             var climate = document.querySelector('input[name=climate]:checked').value;
             var roll = document.querySelector('input[name=roll]:checked').value;
             var arms = document.querySelector('input[name=arms]:checked').value;
-            var url = "recommended-swaddles-file.html?=" + arms + roll + climate;
+            var quizanswers =  arms + roll + climate;
             document.getElementById("link").setAttribute(url);
+            jsarray = [email, quizanswers];
+            sessionStorage.setItem("jsArray", JSON.stringify(jsarray));
+            console.log(email);
+            console.log(quizanswers);
         </script>
         <div class="modal-footer">
-           <a id="link" > <button type="button" onclick="userAPI(document.getElementById('fName').value,document.getElementById('lName').value, document.getElementById('email').value); quizAPI(document.getElementById('email').value,document.querySelector('input[name=size]:checked').value,document.querySelector('input[name=climate]:checked').value,document.querySelector('input[name=roll]:checked').value,document.querySelector('input[name=arms]:checked').value)">See My Swaddles</button></a>
+           <a href="recommended-swaddles-file.html" > <button type="button" onclick="userAPI(document.getElementById('fName').value,document.getElementById('lName').value, document.getElementById('email').value); quizAPI(document.getElementById('email').value,document.querySelector('input[name=size]:checked').value,document.querySelector('input[name=climate]:checked').value,document.querySelector('input[name=roll]:checked').value,document.querySelector('input[name=arms]:checked').value)">See My Swaddles</button></a>
         </div>
       </div>
   
