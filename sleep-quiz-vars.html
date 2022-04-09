@@ -144,7 +144,9 @@
             var climate = document.querySelector('input[name=climate]:checked').value;
             var roll = document.querySelector('input[name=roll]:checked').value;
             var arms = document.querySelector('input[name=arms]:checked').value;
-            var quizanswers = arms + roll + climate;
+            var quizanswers = arms.concat(roll);
+            console.log=(roll);
+            console.log(quizanswers);
             
         </script>
         <div class="modal-footer">
