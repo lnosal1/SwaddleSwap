@@ -58,13 +58,15 @@
             <div id="myData3" class="col-sm-3 text-center sleep-blog" style = "padding:5px"></div>
         </div>
     <script>
-            const queryString = window.location.search;
-            console.log(queryString);
-            const urlParams = new URLSearchParams(queryString);
-            const quizanswers = urlParams.get('quizanswers')
+            //const queryString = window.location.search;
+            //console.log(queryString);
+            //const urlParams = new URLSearchParams(queryString);
+            //const quizanswers = urlParams.get('quizanswers')
+            //console.log(quizanswers);
+            //jsarray = JSON.parse(sessionStorage.getItem("jsArray"));
+            //console.log(jsarray)
+            const quizanswers = localStorage.getItem('quizanswers');
             console.log(quizanswers);
-            jsarray = JSON.parse(sessionStorage.getItem("jsArray"));
-            console.log(jsarray)
 
             fetch('swaddles.json')
             .then(function (response) {

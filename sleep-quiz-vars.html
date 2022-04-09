@@ -92,17 +92,7 @@
                 <li><input type="radio" name="arms" value="down"> I'm Not Sure </li>
             </ul>
         </div>
-        <script>
-            var email = document.getElementById('email').value; 
-            var size = document.querySelector('input[name=size]:checked').value;
-            var climate = document.querySelector('input[name=climate]:checked').value;
-            var roll = document.querySelector('input[name=roll]:checked').value;
-            var arms = document.querySelector('input[name=arms]:checked').value;
-            var quizanswers = arms.concat(roll);
-            console.log=(roll);
-            console.log(quizanswers);
-            
-        </script>
+
         <div class="text-right"><button type="button" data-toggle="modal" data-target="#myModal" class="button2 text-center">See My Matches</button></div>
 
 
@@ -155,7 +145,20 @@
            <a href="recommended-swaddles-file.html?quizanswers=downyescotton"> <button type="button" onclick="userAPI(document.getElementById('fName').value,document.getElementById('lName').value, document.getElementById('email').value); quizAPI(document.getElementById('email').value,document.querySelector('input[name=size]:checked').value,document.querySelector('input[name=climate]:checked').value,document.querySelector('input[name=roll]:checked').value,document.querySelector('input[name=arms]:checked').value)">See My Swaddles</button></a>
         </div>
       </div>
-  
     </div>
   </div>
+  <script>
+    var email = document.getElementById('email').value; 
+    var size = document.querySelector('input[name=size]:checked').value;
+    var climate = document.querySelector('input[name=climate]:checked').value;
+    var roll = document.querySelector('input[name=roll]:checked').value;
+    var arms = document.querySelector('input[name=arms]:checked').value;
+    var armsroll = arms.concat(roll);
+    var quizanswers = armsroll.concat(climate);
+    console.log=(email);
+    console.log(quizanswers);
+    localStorage.setItem('quizanswers', quizanswers);
+    localStorage.setItem('email', email);
+    
+</script>
 </html>
