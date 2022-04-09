@@ -146,10 +146,11 @@
             var climate = document.querySelector('input[name=climate]:checked').value;
             var roll = document.querySelector('input[name=roll]:checked').value;
             var arms = document.querySelector('input[name=arms]:checked').value;
-            var url = "recommended-swaddles-file.html?=" + arms + roll + climate
+            var url = "recommended-swaddles-file.html?=" + arms + roll + climate;
+            document.getElementById("link").setAttribute(url);
         </script>
         <div class="modal-footer">
-           <a href= 'url'> <button type="button" onclick="userAPI(document.getElementById('fName').value,document.getElementById('lName').value, document.getElementById('email').value); quizAPI(document.getElementById('email').value,document.querySelector('input[name=size]:checked').value,document.querySelector('input[name=climate]:checked').value,document.querySelector('input[name=roll]:checked').value,document.querySelector('input[name=arms]:checked').value)">See My Swaddles</button></a>
+           <a id="link" > <button type="button" onclick="userAPI(document.getElementById('fName').value,document.getElementById('lName').value, document.getElementById('email').value); quizAPI(document.getElementById('email').value,document.querySelector('input[name=size]:checked').value,document.querySelector('input[name=climate]:checked').value,document.querySelector('input[name=roll]:checked').value,document.querySelector('input[name=arms]:checked').value)">See My Swaddles</button></a>
         </div>
       </div>
   
