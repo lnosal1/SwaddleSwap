@@ -60,9 +60,7 @@
     <script>
             fetch('https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/getswaddlebyquiz?material=cotton&rollboth=no&sizeRange=Under%203M&arms=down')
             .then(function (response) {
-                return response.json();})
-               
-            .then(result => JSON.parse(result).body)
+                return response.json().body;})
              
             .then(function (data) {
                 appendData(data);
