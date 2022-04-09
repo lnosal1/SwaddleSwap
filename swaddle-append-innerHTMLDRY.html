@@ -81,6 +81,20 @@
                 mainContainer.appendChild(img);          
                 mainContainer.appendChild(div1);
                 mainContainer.appendChild(button);
+
+                var mainContainer2 = document.getElementById("myData2");
+                var div2 = document.createElement("h2");
+                var img2 = document.createElement("div");
+                var button2 = document.createElement("div");
+                var Name2 = data[1].displayName;
+                var imageLink2 = data[1].imageLink;
+                var buttonLink2 = data[1].buyLink;
+                div2.innerHTML = Name2; 
+                img2.innerHTML = "<img src='" + imageLink2+ "' class='img-thumbnail' >";
+                button2.innerHTML = "<a href='" +buttonLink2 + "><button type='button' class='content-button'>Buy on Amazon</button></a>";
+                mainContainer2.appendChild(img2);          
+                mainContainer2.appendChild(div2);
+                mainContainer2.appendChild(button2);
                 
                 
             
