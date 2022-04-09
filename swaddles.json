@@ -12,5 +12,12 @@
     "rollboth": "no", 
     "buyLink": "https://www.amazon.com/SwaddleMe-Pod-Medium-Little-Months/dp/B082XTSM8C/ref=sr_1_5?keywords=swaddle+pod&qid=1649463315&sr=8-5", 
     "imageLink":"swaddlepod.jpg",
-    "material": "cotton"}
+    "material": "cotton"},
+    {"displayName": "Zipadeezip", 
+        "buttonText": "Buy on Amazon", 
+        "arms": "down", 
+        "rollboth": "no", 
+        "buyLink": "https://www.amazon.com/SwaddleMe-Pod-Medium-Little-Months/dp/B082XTSM8C/ref=sr_1_5?keywords=swaddle+pod&qid=1649463315&sr=8-5", 
+        "imageLink":"swaddlepod.jpg",
+        "material": "cotton"}
    ]
