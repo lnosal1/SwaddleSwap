@@ -13,6 +13,17 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="data-1.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script>
+        var email = document.getElementById('email').value; 
+        var size = document.querySelector('input[name=size]:checked').value;
+        var climate = document.querySelector('input[name=climate]:checked').value;
+        var roll = document.querySelector('input[name=roll]:checked').value;
+        var arms = document.querySelector('input[name=arms]:checked').value;
+        var quizanswers = arms.concat(roll);
+        console.log=(roll);
+        console.log(quizanswers);
+        
+    </script>
 </head>
 
 <body>
@@ -138,17 +149,7 @@
                 <input type="text" id="email">                
             </form>
         </div>
-        <script>
-            var email = document.getElementById('email').value; 
-            var size = document.querySelector('input[name=size]:checked').value;
-            var climate = document.querySelector('input[name=climate]:checked').value;
-            var roll = document.querySelector('input[name=roll]:checked').value;
-            var arms = document.querySelector('input[name=arms]:checked').value;
-            var quizanswers = arms.concat(roll);
-            console.log=(roll);
-            console.log(quizanswers);
-            
-        </script>
+
         <div class="modal-footer">
            <a href="recommended-swaddles-file.html?quizanswers=" onclick="location.href=this.href + quizanswers; false;" > <button type="button" onclick="userAPI(document.getElementById('fName').value,document.getElementById('lName').value, document.getElementById('email').value); quizAPI(document.getElementById('email').value,document.querySelector('input[name=size]:checked').value,document.querySelector('input[name=climate]:checked').value,document.querySelector('input[name=roll]:checked').value,document.querySelector('input[name=arms]:checked').value)">See My Swaddles</button></a>
         </div>
