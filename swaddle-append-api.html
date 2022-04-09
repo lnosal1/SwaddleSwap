@@ -62,13 +62,13 @@
             .then(function (response) {
                 return response.json();})
              
-            .then(function (data) {
-                appendData(data);
+            .then(function (Items) {
+                appendData(Items);
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
-        function appendData(data) {
+        function appendData(Items) {
             var mainContainer = document.getElementById("myData1");
                 var div1 = document.createElement("h2");
                 var img = document.createElement("div");
