@@ -73,9 +73,9 @@
                 var div1 = document.createElement("h2");
                 var img = document.createElement("div");
                 var button = document.createElement("div");
-                var Name = Items[0].displayName;
-                var imageLink = Items[0].imageLink;
-                var buttonLink = Items[0].buyLink;
+                var Name = Items[0].displayName[0];
+                var imageLink = Items[0].imageLink[0];
+                var buttonLink = Items[0].buyLink[0];
                 div1.innerHTML = Name; 
                 img.innerHTML = "<img src='" + imageLink+ "' class='img-thumbnail' >";
                 button.innerHTML = "<a href='" +buttonLink + "><button type='button' class='content-button'>Buy on Amazon</button></a>";
