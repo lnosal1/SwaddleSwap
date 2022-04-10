@@ -13,7 +13,7 @@ var quizAPI = (email,Q1Size,Q2Climate,Q3Roll,Q4Arms)=>{
         headers: myHeaders,
         body: answers,
         redirect: 'follow',
-        keepalive: true
+        
     };
     // make API call with parameters and use promises to get response
     fetch("https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod", requestOptions)
@@ -37,7 +37,7 @@ var userAPI = (fName,lName,email)=>{
         headers: myuserHeaders,
         body: userinfo,
         redirect: 'follow',
-        keepalive: true
+    
     };
     // make API call with parameters and use promises to get response
     fetch("https://nsc5shfxpi.execute-api.us-east-1.amazonaws.com/prod", requestOptions)
