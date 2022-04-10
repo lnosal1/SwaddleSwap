@@ -135,7 +135,8 @@ function go () {
   // (A) VARIABLES TO PASS
   var arms = document.querySelector('input[name=arms]:checked').value;
   var roll = document.querySelector('input[name=roll]:checked').value;
-  var quizanswers = arms + roll;
+  var climate = document.querySelector('input[name=climate]:checked').value;
+  var quizanswers = arms + roll + climate;
 
   // (B) URL PARAMETERS
   var params = new URLSearchParams();
