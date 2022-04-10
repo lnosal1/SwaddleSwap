@@ -130,13 +130,15 @@
         
         <div class="text-right"><a href="recommended-swaddles-file.html"><button type="button">See my Matches</button></a></div>
 <script>
-    element.addEventListener('click', function(event) {
-    // Stop the link from redirecting
-    event.preventDefault();
+    
+    var para = new URLSearchParams();
+    para.append("KEY", "VALUE");
+    location.href = "recommended-swaddles-file?" + para.toString(); 
+ 
 
     // Redirect instead with JavaScript
-    window.location.href = element.href + '?q'+ document.getElementById('email').value;
-}, false);
+    email() = document.getElementById('email').value;
+
 </script>
     
 </div>
