@@ -13,10 +13,9 @@ var quizAPI = (email,Q1Size,Q2Climate,Q3Roll,Q4Arms)=>{
         headers: myHeaders,
         body: answers,
         redirect: 'follow',
-        keepalive: true
     };
     // make API call with parameters and use promises to get response
-    fetch("https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod", requestOptions)
+    await fetch("https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod", requestOptions)
     .then(response => response.text())
     
     .catch(error => console.log('error', error));
@@ -39,7 +38,7 @@ var userAPI = (fName,lName,email)=>{
         redirect: 'follow'
     };
     // make API call with parameters and use promises to get response
-    fetch("https://nsc5shfxpi.execute-api.us-east-1.amazonaws.com/prod", requestOptions)
+    await fetch("https://nsc5shfxpi.execute-api.us-east-1.amazonaws.com/prod", requestOptions)
     .then(response => response.text())
     .then(result => alert(JSON.parse(result).body))
     .catch(error => console.log('error', error));
