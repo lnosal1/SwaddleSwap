@@ -128,8 +128,16 @@
             
         </script>
         
-        <div class="text-right"><button id="submit" type="button" class="button2 text-center">See My Matches</button></div>
+        <div class="text-right"><a href="recommended-swaddles-file.html"><button type="button">See my Matches</button></a></div>
+<script>
+    element.addEventListener('click', function(event) {
+    // Stop the link from redirecting
+    event.preventDefault();
 
+    // Redirect instead with JavaScript
+    window.location.href = element.href + '?q'+ document.getElementById('email').value;
+}, false);
+</script>
     
 </div>
     
