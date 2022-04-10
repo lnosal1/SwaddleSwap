@@ -155,6 +155,12 @@
     const arms = document.querySelector('input[name=arms]:checked').value;
     const armsroll = arms.concat(roll);
     const quizanswers = armsroll.concat(climate);
+    let stringUrl = "http://www.google.com/search";
+    let url = new URL(stringUrl);
+    let params = url.searchParams;
+    params.append("q", quizanswers);
+
+    console.log(url.toString());
     
 </script>
 </html>
