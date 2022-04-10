@@ -130,16 +130,22 @@
         
         <div class="text-right"><a href="recommended-swaddles-file.html"><button type="button">See my Matches</button></a></div>
 <script>
-    
-    var para = new URLSearchParams();
-    para.append("KEY", "VALUE");
-    location.href = "recommended-swaddles-file?" + para.toString(); 
- 
+<script>
+function go () {
+  // (A) VARIABLES TO PASS
+  var quizanswers = "downyescotton";
 
-    // Redirect instead with JavaScript
-    email() = document.getElementById('email').value;
+  // (B) URL PARAMETERS
+  var params = new URLSearchParams();
+  params.append("quizanswers", quizanswers);
 
+  // (C) GO!
+  var url = "recommended-swaddles-file.html?" + params.toString();
+  location.href = url;
+  // window.open(url);
+}
 </script>
+
     
 </div>
     
