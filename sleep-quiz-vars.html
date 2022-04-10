@@ -133,7 +133,8 @@
 
 function go () {
   // (A) VARIABLES TO PASS
-  var quizanswers = "downyescotton";
+  var arms = document.querySelector('input[name=arms]:checked').value;
+  var quizanswers = arms;
 
   // (B) URL PARAMETERS
   var params = new URLSearchParams();
