@@ -106,22 +106,28 @@
     </form>
 
         <script>
-            const email = document.getElementById('email').value; 
-            const size = document.querySelector('input[name=size]:checked').value;
-            const climate = document.querySelector('input[name=climate]:checked').value;
-            const roll = document.querySelector('input[name=roll]:checked').value;
-            const arms = document.querySelector('input[name=arms]:checked').value;
-            const armsroll = arms.concat(roll);
-            const quizanswers = armsroll.concat(climate);
-            let stringUrl = "http://www.google.com/search";
-            let url = new URL(stringUrl);
-            let params = url.searchParams;
-            params.append("q", quizanswers);
+            var email = document.getElementById('email');
+            var emailvalue = email.value; 
+            
+            document.getElementById('submit').onclick = function() {
+            var selected = document.querySelector('input[type=radio][name=size]:checked');
+            alert(selected.value);
+            }
+            //var size = document.querySelector('input[name=size]:checked').value;
+            //var climate = document.querySelector('input[name=climate]:checked').value;
+            //var roll = document.querySelector('input[name=roll]:checked').value;
+            //var arms = document.querySelector('input[name=arms]:checked').value;
+            //var armsroll = arms.concat(roll);
+            //var quizanswers = armsroll.concat(climate);
+            //let stringUrl = "http://www.google.com/search";
+            //let url = new URL(stringUrl);
+            //let params = url.searchParams;
+            //params.append("q", quizanswers);
             console.log(email);
             
         </script>
         
-        <div class="text-right"><button type="button" class="button2 text-center">See My Matches</button></div>
+        <div class="text-right"><button id="submit" type="button" class="button2 text-center">See My Matches</button></div>
 
 
         
