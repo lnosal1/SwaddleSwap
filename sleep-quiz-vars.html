@@ -106,12 +106,13 @@
     </form>
 
         <script>
-            var email = document.getElementById('email');
-            var emailvalue = email.value; 
+            //var email = document.getElementById('email');
+            //var emailvalue = email.value; 
             
             document.getElementById('submit').onclick = function() {
             var selected = document.querySelector('input[type=radio][name=size]:checked');
             alert(selected.value);
+            console.log(selected.value);
             }
             //var size = document.querySelector('input[name=size]:checked').value;
             //var climate = document.querySelector('input[name=climate]:checked').value;
@@ -123,7 +124,7 @@
             //let url = new URL(stringUrl);
             //let params = url.searchParams;
             //params.append("q", quizanswers);
-            console.log(email);
+            
             
         </script>
         
