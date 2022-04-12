@@ -16,7 +16,7 @@ $(document).ready(function(){
 		[
 			{
                 name: "Find the Best Swaddle",
-                description: "Take our swaddle finder quiz to find your match.",
+                description: "Take our swaddle finder quiz to find the best swaddle for your child.",
                 button: "How it Works",
                 link: "how-it-works.html"
 
