@@ -15,8 +15,8 @@ $(document).ready(function(){
         item:
 		[
 			{
-                name: "Try Before You Buy",
-                description: "Take our swaddle finder quiz to find your match and then rent 5 swaddles for up to 10 days.",
+                name: "Find the Best Swaddle",
+                description: "Take our swaddle finder quiz to find your match.",
                 button: "How it Works",
                 link: "how-it-works.html"
 
@@ -29,7 +29,7 @@ $(document).ready(function(){
             },
             {
                 name: "Ready to Choose?",
-                description: "Find the swaddle that works best for you and your baby. Use our quiz or rent before you buy.",
+                description: "Find the swaddle that works best for you and your baby. Use our quiz before you buy.",
                 button:"Buy Now",
                 link: "sleep-quiz.html"
             }
