@@ -50,7 +50,7 @@
           </ul>
        
       </nav>
-        <H1 class = "header">Your Recommended Swaddles</H1>
+        <H1 class = "header" id = "heading"></H1>
         <div class = "container text-center">
 
             <div id="myData1" class="col-sm-3 text-center sleep-blog" style = "padding:5px"></div>
@@ -121,7 +121,8 @@
                 mainContainer3.appendChild(button3);
                 recommendedAPI (email, quizanswers, childname, Name, buttonLink, Name2, buttonLink2, Name3, buttonLink3);
 
-                
+                var headertext = document.getElementById("heading");
+                headertext.innerHTML = "Recommended Swaddles for" + childname;
                 
             
         }
