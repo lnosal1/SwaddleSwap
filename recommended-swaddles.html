@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Sleep Blog | Swaddle Swap</title>
+    <title>Recommended Swaddles | Swaddle Swap</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,7 +13,7 @@
     
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     
-    <script type="text/javascript" src="swaddleappend.js"></script>
+    
     
     
 
@@ -87,7 +87,7 @@
                 var buttonLink = data[quizanswers][0].buyLink;
                 div1.innerHTML = Name; 
                 img.innerHTML = "<img src='" + imageLink+ "' class='img-thumbnail' >";
-                button.innerHTML = "<a href='" +buttonLink + "><button type='button' class='content-button' onclick='recommendedAPI = (Id, quizanswers, childname, Name, buttonLink, Name2, buttonLink2, Name3, buttonLink3)'>Buy on Amazon</button></a>";
+                button.innerHTML = "<a href='" +buttonLink + " target='_blank'><button type='button' class='content-button' onclick='recommendedAPI = (Id, quizanswers, childname, Name, buttonLink, Name2, buttonLink2, Name3, buttonLink3)'>Buy on Amazon</button></a>";
                 mainContainer.appendChild(img);          
                 mainContainer.appendChild(div1);
                 mainContainer.appendChild(button);
