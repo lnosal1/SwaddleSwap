@@ -63,7 +63,7 @@
             const urlParams = new URLSearchParams(queryString);
             const quizanswers = urlParams.get('quizanswers');
             const childname = urlParams.get('childname');
-            const Id = urlParams.get('email')
+            const email = urlParams.get('email')
             console.log(quizanswers);
           
 
@@ -119,7 +119,7 @@
                 mainContainer3.appendChild(img3);          
                 mainContainer3.appendChild(div3);
                 mainContainer3.appendChild(button3);
-                recommendedAPI (Id, quizanswers, childname, Name, buttonLink, Name2, buttonLink2, Name3, buttonLink3);
+                recommendedAPI (email, quizanswers, childname, Name, buttonLink, Name2, buttonLink2, Name3, buttonLink3);
 
                 
                 
