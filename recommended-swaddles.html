@@ -61,7 +61,9 @@
             const queryString = window.location.search;
             console.log(queryString);
             const urlParams = new URLSearchParams(queryString);
-            const quizanswers = urlParams.get('quizanswers')
+            const quizanswers = urlParams.get('quizanswers');
+            const childname = urlParams.get('childname');
+            const Id = urlParams.get('email')
             console.log(quizanswers);
           
 
@@ -85,7 +87,7 @@
                 var buttonLink = data[quizanswers][0].buyLink;
                 div1.innerHTML = Name; 
                 img.innerHTML = "<img src='" + imageLink+ "' class='img-thumbnail' >";
-                button.innerHTML = "<a href='" +buttonLink + "><button type='button' class='content-button'>Buy on Amazon</button></a>";
+                button.innerHTML = "<a href='" +buttonLink + "><button type='button' class='content-button' onclick="recommendedAPI = (Id, quizanswers, childname, Name, buttonLink, Name2, buttonLink2, Name3, buttonLink3)">Buy on Amazon</button></a>";
                 mainContainer.appendChild(img);          
                 mainContainer.appendChild(div1);
                 mainContainer.appendChild(button);
