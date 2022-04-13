@@ -40,7 +40,7 @@ var recommendedAPI = (email, quizanswers, childname, Name, buttonLink, Name2, bu
         
     };
     // make API call with parameters and use promises to get response
-    fetch("https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod", requestOptions)
+    fetch("https://4nqem5uyhg.execute-api.us-east-1.amazonaws.com/prod/recommended", requestOptions)
     .then(response => response.text())
     
     .catch(error => console.log('error', error));
