@@ -27,7 +27,7 @@ var recommendedAPI = (Id, quizanswers, childname, Name, buttonLink, Name2, butto
     // instantiate a headers object
     var recommendedHeaders = new Headers();
     // add content type header to object
-    myHeaders.append("Content-Type", "application/json");
+    recommendedHeaders.append("Content-Type", "application/json");
     // using built in JSON utility package turn object to string and store in a variable
     var swaddles = JSON.stringify({'Id': Id,'quizanswer':quizanswers,'childname': childname,'Name': Name,'buttonLink': buttonLink,'Name2': Name2, 'buttonLink2': buttonLink2,'Name3': Name3,'buttonLink3': buttonLink3,});
 
