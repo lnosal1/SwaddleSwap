@@ -13,18 +13,18 @@
         "imageLink":"sleepsack.jpg"}
    ],
    "downyescotton":[
-    {"displayName": "YESSwaddleMe Pod", 
+    {"displayName": "Nested Bean Zen Sack", 
     "buttonText": "Buy on Amazon", 
-    "buyLink": "https://www.amazon.com/SwaddleMe-Pod-Medium-Little-Months/dp/B082XTSM8C/ref=sr_1_5?keywords=swaddle+pod&qid=1649463315&sr=8-5", 
-    "imageLink":"swaddleup.jpg"},
-    {"displayName": "YESSwaddleMe Pod", 
+    "buyLink": "https://www.amazon.com/Nested-Bean-Zen-Sack-Classic/dp/B00WY3T9RQ/ref=sr_1_4_sspa?crid=1Z66HMPEGVWEN&keywords=merlin+sleep+suit&qid=1649903791&sprefix=merlin+sleep+sui%2Caps%2C544&sr=8-4-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExNTQzUkFQOVU4WUYxJmVuY3J5cHRlZElkPUEwMzI5MDA4NldESkVWWU5TS0s5JmVuY3J5cHRlZEFkSWQ9QTA5MTAwMzQzM0U0WEdXMzU3TkQmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl", 
+    "imageLink":"nestedbean.jpg"},
+    {"displayName": "Halo Sleep Sack", 
     "buttonText": "Buy on Amazon", 
-    "buyLink": "https://www.amazon.com/SwaddleMe-Pod-Medium-Little-Months/dp/B082XTSM8C/ref=sr_1_5?keywords=swaddle+pod&qid=1649463315&sr=8-5", 
-    "imageLink":"swaddlepod.jpg"},
-    {"displayName": "YESZipadeezip", 
+    "buyLink": "https://www.amazon.com/Halo-Sleepsack-Wearable-Blanket-Heather/dp/B06XY8T62D/ref=sr_1_12?crid=1Z66HMPEGVWEN&keywords=merlin+sleep+suit&qid=1649903950&sprefix=merlin+sleep+sui%2Caps%2C544&sr=8-12", 
+    "imageLink":"halocotton.jpg"},
+    {"displayName": "Love to Dream Sleep Suit", 
         "buttonText": "Buy on Amazon", 
-        "buyLink": "https://www.amazon.com/SwaddleMe-Pod-Medium-Little-Months/dp/B082XTSM8C/ref=sr_1_5?keywords=swaddle+pod&qid=1649463315&sr=8-5", 
-        "imageLink":"swaddlepod.jpg"}
+        "buyLink": "https://www.amazon.com/Love-Dream-Premium-Wearable-Blanket/dp/B07N2YDWWV/ref=sr_1_16?crid=1Z66HMPEGVWEN&keywords=merlin+sleep+suit&qid=1649904070&sprefix=merlin+sleep+sui%2Caps%2C544&sr=8-16", 
+        "imageLink":"sleepsuit.jpg"}
    ],"downnofleece":[
     {"displayName": "SwaddleMe Pod", 
     "buttonText": "Buy on Amazon", 
