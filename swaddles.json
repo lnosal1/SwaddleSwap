@@ -26,18 +26,18 @@
         "buyLink": "https://www.amazon.com/Love-Dream-Premium-Wearable-Blanket/dp/B07N2YDWWV/ref=sr_1_16?crid=1Z66HMPEGVWEN&keywords=merlin+sleep+suit&qid=1649904070&sprefix=merlin+sleep+sui%2Caps%2C544&sr=8-16", 
         "imageLink":"sleepsuit.jpg"}
    ],"downnofleece":[
-    {"displayName": "SwaddleMe Pod", 
+    {"displayName": "Happiest Baby Sleepea", 
     "buttonText": "Buy on Amazon", 
-    "buyLink": "https://www.amazon.com/SwaddleMe-Pod-Medium-Little-Months/dp/B082XTSM8C/ref=sr_1_5?keywords=swaddle+pod&qid=1649463315&sr=8-5", 
-    "imageLink":"swaddleup.jpg"},
-    {"displayName": "SwaddleMe Pod", 
+    "buyLink": "https://www.amazon.com/Happiest-Baby-Sleepea-5-Second-Swaddle/dp/B08XZZ4VGD/ref=sr_1_1_sspa?crid=1W8EDLIZCE0K&keywords=swaddle+me+fleece+swaddle&qid=1649904491&sprefix=swaddle+me+fleece+s%2Caps%2C553&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExRkhGRzFQV0pIRjhWJmVuY3J5cHRlZElkPUEwNzMwNDE4MUNSME1WTTVDUktBMiZlbmNyeXB0ZWRBZElkPUExMDI0OTkyMzNVRFhHVkJDSUNDNyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=", 
+    "imageLink":"sleepea.jpg"},
+    {"displayName": "Hooyax Swaddle Blanket", 
     "buttonText": "Buy on Amazon", 
-    "buyLink": "https://www.amazon.com/SwaddleMe-Pod-Medium-Little-Months/dp/B082XTSM8C/ref=sr_1_5?keywords=swaddle+pod&qid=1649463315&sr=8-5", 
-    "imageLink":"swaddlepod.jpg"},
-    {"displayName": "Zipadeezip", 
+    "buyLink": "https://www.amazon.com/Hooyax-Swaddle-Blanket-Adjustable-Dinosaurs/dp/B0995RH8RH/ref=sr_1_26_sspa?crid=1W8EDLIZCE0K&keywords=swaddle+me+fleece+swaddle&qid=1649904601&sprefix=swaddle+me+fleece+s%2Caps%2C553&sr=8-26-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzQkFHT0swNktVVEFNJmVuY3J5cHRlZElkPUEwNDcxODM5TktTMVdFN1BHVDg3JmVuY3J5cHRlZEFkSWQ9QTA4Nzc0MjZSVUo4WVhWOUpQTkgmd2lkZ2V0TmFtZT1zcF9tdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl", 
+    "imageLink":"hooyax.jpg"},
+    {"displayName": "Aden & Anais Swaddle", 
         "buttonText": "Buy on Amazon", 
-        "buyLink": "https://www.amazon.com/SwaddleMe-Pod-Medium-Little-Months/dp/B082XTSM8C/ref=sr_1_5?keywords=swaddle+pod&qid=1649463315&sr=8-5", 
-        "imageLink":"swaddlepod.jpg"}
+        "buyLink": "https://www.amazon.com/aden-anais-Essentials-Swaddle-Wearable/dp/B08X9F94T7/ref=sxin_14_pa_sp_search_thematic_sspa?crid=1W8EDLIZCE0K&cv_ct_cx=swaddle+me+fleece+swaddle&keywords=swaddle+me+fleece+swaddle&pd_rd_i=B08X9F94T7&pd_rd_r=3ded24a6-8829-4c7a-ad0a-d2e600faf7d1&pd_rd_w=blx1E&pd_rd_wg=lyTu4&pf_rd_p=eca726a8-0f0c-4d15-a045-de730411b965&pf_rd_r=PC16APP7FXBXX7YYET6S&qid=1649904778&sprefix=swaddle+me+fleece+s%2Caps%2C553&sr=1-1-a73d1c8c-2fd2-4f19-aa41-2df022bcb241-spons&psc=1&smid=A3NT34NG7Z0NCP&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzMjM0NVYwTkFRRExRJmVuY3J5cHRlZElkPUEwMTc5MTQ2M0xKRkhFTEtKWUg1OCZlbmNyeXB0ZWRBZElkPUEwNzQyNTEyMjkxNU9PSUkxQUlQTiZ3aWRnZXROYW1lPXNwX3NlYXJjaF90aGVtYXRpYyZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=", 
+        "imageLink":"adenanais.jpg"}
    ],
    "downyesfleece":[
     {"displayName": "SwaddleMe Pod", 
