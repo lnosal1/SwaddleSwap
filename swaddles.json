@@ -79,18 +79,18 @@
             "buyLink": "https://www.amazon.com/Love-Dream-Premium-Wearable-Blanket/dp/B07N2YDWWV/ref=sr_1_16?crid=1Z66HMPEGVWEN&keywords=merlin+sleep+suit&qid=1649904070&sprefix=merlin+sleep+sui%2Caps%2C544&sr=8-16", 
             "imageLink":"sleepsuit.jpg"}
    ],"upnofleece":[
-    {"displayName": "SwaddleMe Pod", 
+    {"displayName": "SwaddleSack with Arms Up", 
     "buttonText": "Buy on Amazon", 
-    "buyLink": "https://www.amazon.com/SwaddleMe-Pod-Medium-Little-Months/dp/B082XTSM8C/ref=sr_1_5?keywords=swaddle+pod&qid=1649463315&sr=8-5", 
-    "imageLink":"swaddleup.jpg"},
-    {"displayName": "SwaddleMe Pod", 
+    "buyLink": "https://www.amazon.com/ClickyHips-Sleeping-Organic-Cotton-Months/dp/B0855R4PTP/ref=sr_1_15?crid=3MOIUVEZ4GRZI&keywords=fleece+love+to+dream+swaddle&qid=1649988889&sprefix=fleece+love+to+dream+sw%2Caps%2C607&sr=8-15", 
+    "imageLink":"swaddlesackup.jpg"},
+    {"displayName": "CuddleMe Arms Up", 
     "buttonText": "Buy on Amazon", 
-    "buyLink": "https://www.amazon.com/SwaddleMe-Pod-Medium-Little-Months/dp/B082XTSM8C/ref=sr_1_5?keywords=swaddle+pod&qid=1649463315&sr=8-5", 
-    "imageLink":"swaddlepod.jpg"},
+    "buyLink": "https://www.amazon.com/CuddleMe-Essential-Wearable-Transition-Strawberry/dp/B098F7BSB4/ref=sr_1_43?crid=3MOIUVEZ4GRZI&keywords=fleece+love+to+dream+swaddle&qid=1649988998&sprefix=fleece+love+to+dream+sw%2Caps%2C607&sr=8-43", 
+    "imageLink":"cuddleme.jpg"},
     {"displayName": "Zipadeezip", 
-        "buttonText": "Buy on Amazon", 
-        "buyLink": "https://www.amazon.com/SwaddleMe-Pod-Medium-Little-Months/dp/B082XTSM8C/ref=sr_1_5?keywords=swaddle+pod&qid=1649463315&sr=8-5", 
-        "imageLink":"swaddlepod.jpg"}
+        "buttonText": "Buy on SleepingBaby", 
+        "buyLink": "https://www.sleepingbaby.com/collections/zipadee-zip-swaddle-transition", 
+        "imageLink":"zipadeezip.jpg"}
    ],"upyesfleece":[
     {"displayName": "Simple Joys Microfleece Sleepbag", 
         "buttonText": "Buy on Amazon", 
