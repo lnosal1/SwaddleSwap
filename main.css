@@ -129,5 +129,6 @@ img.swaddle {
 }
 
 .modal-header {
-  color:#62CCBC;
+  background-color:#62CCBC;
+  text-align: left;
 }
