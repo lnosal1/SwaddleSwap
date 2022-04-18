@@ -133,3 +133,8 @@ img.swaddle {
   text-align: left;
 }
 
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
