@@ -138,3 +138,7 @@ label {
   width: 150px;
   text-align: right;
 }
+.form-left {
+  list-style:none;
+  text-align: left;
+}
