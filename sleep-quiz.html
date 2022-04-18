@@ -89,12 +89,14 @@
         </div>
         <div class = "row col-sm-12 quiz-container">
             <h2>Enter Your Personal Information to See Results</h2>
+            <ul>
         <label>First Name:</label>
         <input type="text" id="fName"></br>
         <label>Last Name:</label>
         <input type="text" id="lName"></br>
         <label>Email:</label>
         <input type="text" id="email">  
+        </ul>
         </div>
     </div>
     <div style="float:right">  <button type="button" class='content-button' data-toggle="modal" data-target="#myModal" onclick="quizAPI(document.getElementById('fName').value,document.getElementById('lName').value,document.getElementById('email').value,document.querySelector('input[name=size]:checked').value,document.querySelector('input[name=climate]:checked').value,document.querySelector('input[name=roll]:checked').value,document.querySelector('input[name=arms]:checked').value)">See My Swaddles</button></div>
