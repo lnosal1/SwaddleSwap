@@ -111,6 +111,18 @@ var arms = document.querySelector('input[name=arms]:checked').value;
   var quizanswers = arms + roll + climate;
   var email = document.getElementById('email').value;
   var childname = document.getElementById('ChildsName').value;
+  
+  function validateForm(climate) {
+
+
+if (climate == null || climate == "") {
+    nameError = "Please select an option";
+    document.getElementById("name_error").innerHTML = nameError; 
+    return false;
+} 
+
+else {return true;}
+};
 
 function go (arms,roll,climate,quizanswers,email,childname) {
   // (A) VARIABLES TO PASS
