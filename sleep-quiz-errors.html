@@ -123,7 +123,7 @@ if (climate == null || climate == "") {
     return false;
 }
 
-else if (roll == null || roll == "") {
+if (roll == null || roll == "") {
     rollError = "<p class='alert alert-danger'> Please select an option.</p>";
     document.getElementById("roll_error").innerHTML = rollError; 
     return false;
