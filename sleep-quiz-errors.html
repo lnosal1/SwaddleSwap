@@ -82,8 +82,8 @@
         </div>
   
         <div class = "row col-sm-12 quiz-container">
-            <h2>In the womb, my baby's arms were:</h2>
             <div id="arms_error"></div>
+            <h2>In the womb, my baby's arms were:</h2>
             <ul>
                 <li><input type="radio" name="arms" value="up"> Up By Their Face </li>
                 <li><input type="radio" name="arms" value="down"> Down By Their Side</li>
@@ -97,6 +97,7 @@
         <input type="text" id="fName"></br>
         <label>Last Name:</label>
         <input type="text" id="lName"></br>
+        <div id="email_error"></div>
         <label>Email:</label>
         <input type="text" id="email">  
             </div>
@@ -115,7 +116,7 @@ var arms = document.querySelector('input[name=arms]:checked').value;
   var email = document.getElementById('email').value;
   var childname = document.getElementById('ChildsName').value;
   
-  function validateForm(climate, roll,arms) {
+  function validateForm(climate, roll,arms, email) {
     var submit = true;
 
     if (climate == null || climate == "") {
@@ -134,6 +135,11 @@ var arms = document.querySelector('input[name=arms]:checked').value;
       armsError = "<p class='alert alert-danger'>Please enter your selection</p>";
       document.getElementById("arms_error").innerHTML = armsError;
       submit = false;
+    }
+    if (email == null || email == "") {
+        emailError = "<p class='alert alert-danger'>Please enter your email</p>";
+        document.getElementById("email_error").innerHTML = emailError;
+        submit = false;
     }
 
     return submit;
