@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Swaddle Quiz | Swaddle Swap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    
+    
+    <script type="text/javascript" src="jquery-3.3.1-1.min.js"></script>    
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="app.js"></script>
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div role ="img" aria-label = "Logo image for swaddle swap"><a href="index.html"><img src="SwaddleLogo.png" width=auto height="50" alt=""></a></div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="how-it-works.html">How It Works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sleep-quiz.html">Sleep Quiz</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="sleep-blog.html">Sleep Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="swaddle-partners.html">Swaddle Partners</a>
+            </li>
+
+            </ul>
+        
+        </nav>
+  <h1 class="header">Take the Swaddle Quiz to Find Your Recommendations</h1>
+  <form>
+    <div class = "container">
+        <div class = "row col-sm-12 quiz-container">
+            <h2>My baby is currently wearing size:</h2>
+            <ul>
+                <li><input type="radio" name="size" value="NB"> Newborn </li>
+                <li><input type="radio" name="size" value="Under 3M"> 3 Months</li>
+                <li><input type="radio" name="size" value="Under 6M"> 6 Months </li>
+                <li><input type="radio" name="size" value="Under 9M"> 9 Months</li>
+                <li><input type="radio" name="size" value="Under 12M"> 12 Months</li> 
+                <li><input type="radio" name="size" value="Over 12M"> Over 12 Months</li>
+            </ul>
+        </div>
+
+    
+        <div class = "row col-sm-12 quiz-container">
+            <h2>The climate where we live is mostly:</h2>
+            <ul>
+                <li><input type="radio" name="climate" value="fleece"> Cold </li>
+                <li><input type="radio" name="climate" value="fleece"> Cool</li> 
+                <li><input type="radio" name="climate" value="cotton"> Warm </li>
+                <li><input type="radio" name="climate" value="cotton"> Hot</li>
+            </ul>
+        </div>
+        <div class = "row col-sm-12 quiz-container">
+            <h2>Can your baby roll?</h2>
+
+            <ul>
+                <li><input type="radio" name="roll" value="yes"> Yes, both ways </li>
+                <li><input type="radio" name="roll" value="no"> Not at all</li>
+                <li><input type="radio" name="roll" value="yes"> Front to Back </li>
+                <li><input type="radio" name="roll" value="yes"> Back to Front</li>
+                <li><input type="radio" name="roll" value="yes"> Unsure</li>
+            </ul>
+        </div>
+  
+        <div class = "row col-sm-12 quiz-container">
+            <h2>In the womb, my baby's arms were:</h2>
+            <ul>
+                <li><input type="radio" name="arms" value="up"> Up By Their Face </li>
+                <li><input type="radio" name="arms" value="down"> Down By Their Side</li>
+                <li><input type="radio" name="arms" value="down"> I'm Not Sure </li>
+            </ul>
+        </div>
+        <div class = "row col-sm-12 quiz-container">
+            <h2>Enter Your Personal Information to See Results</h2>
+            <div class = "form-left">
+        <label>First Name:</label>
+        <input type="text" id="fName"></br>
+        <label>Last Name:</label>
+        <input type="text" id="lName"></br>
+        <label>Email:</label>
+        <input type="text" id="email">  
+            </div>
+        </div>
+    </div>
+    <div style="float:right">  <button type="button" class='content-button' data-toggle="modal" data-target="#myModal" onclick="quizAPI(document.getElementById('fName').value,document.getElementById('lName').value,document.getElementById('email').value,document.querySelector('input[name=size]:checked').value,document.querySelector('input[name=climate]:checked').value,document.querySelector('input[name=roll]:checked').value,document.querySelector('input[name=arms]:checked').value)">See My Swaddles</button></div>
+    </form>
+
+        
+  
+<script>
+var arms = document.querySelector('input[name=arms]:checked').value;
+  var roll = document.querySelector('input[name=roll]:checked').value;
+  var climate = document.querySelector('input[name=climate]:checked').value;
+  var quizanswers = arms + roll + climate;
+  var email = document.getElementById('email').value;
+  var childname = document.getElementById('ChildsName').value;
+
+function go (arms,roll,climate,quizanswers,email,childname) {
+  // (A) VARIABLES TO PASS
+  var arms = document.querySelector('input[name=arms]:checked').value;
+  var roll = document.querySelector('input[name=roll]:checked').value;
+  var climate = document.querySelector('input[name=climate]:checked').value;
+  var quizanswers = arms + roll + climate;
+  var email = document.getElementById('email').value;
+  var childname = document.getElementById('ChildsName').value;
+
+  // (B) URL PARAMETERS
+  var params = new URLSearchParams();
+  params.append("quizanswers", quizanswers);
+  params.append("email", email);
+  params.append("childname", childname);
+
+  // (C) GO!
+  var url = "recommended-swaddles.html?" + params.toString();
+  location.href = url;
+  // window.open(url);
+}
+
+</script>
+
+    
+</div>
+    
+</body>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Who are these swaddles for?</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            
+            <form>
+                <label>Child's Name:</label>
+                <input type="text" id="ChildsName"></br>              
+            </form>
+        </div>
+        
+        <div class="modal-footer">
+           <button type="button" class="text-right content-button" onclick="go()">See My Swaddles</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+</html>
