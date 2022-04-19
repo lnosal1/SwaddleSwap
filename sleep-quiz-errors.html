@@ -61,7 +61,7 @@
         <div class = "row col-sm-12 quiz-container">
             <div id="climate_error"></div>
             <h2>The climate where we live is mostly:</h2>
-            <ul id="climate">
+            <ul>
                 <li><input type="radio" name="climate" value="fleece"> Cold </li>
                 <li><input type="radio" name="climate" value="fleece"> Cool</li> 
                 <li><input type="radio" name="climate" value="cotton"> Warm </li>
@@ -114,7 +114,7 @@ var arms = document.querySelector('input[name=arms]:checked').value;
   var email = document.getElementById('email').value;
   var childname = document.getElementById('ChildsName').value;
   
-  function validateForm(climate) {
+  function validateForm(climate, roll) {
     var submit = true;
 
     if (climate == null || climate == "") {
@@ -123,11 +123,11 @@ var arms = document.querySelector('input[name=arms]:checked').value;
         submit = false;
     }
 
-   // if (y == null || y == "") {
-     //   emailError = "Please enter your email";
-       // document.getElementById("email_error").innerHTML = emailError;
-        //submit = false;
-   // }
+   if (roll == null || roll == "") {
+      rollError = "<p class='alert alert-danger'>Please enter your name</p>";
+      document.getElementById("roll_error").innerHTML = rollError;
+      submit = false;
+   }
 
     //if (z == null || z == "") {
       //  telephoneError = "Please enter your telephone";
