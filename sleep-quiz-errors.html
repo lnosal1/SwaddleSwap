@@ -91,13 +91,13 @@
             </ul>
         </div>
         <div class = "row col-sm-12 quiz-container">
+            <div id="email_error"></div>
             <h2>Enter Your Personal Information to See Results</h2>
             <div class = "form-left">
         <label>First Name:</label>
         <input type="text" id="fName"></br>
         <label>Last Name:</label>
         <input type="text" id="lName"></br>
-        <div id="email_error"></div>
         <label>Email:</label>
         <input type="text" id="email">  
             </div>
@@ -124,6 +124,9 @@ var arms = document.querySelector('input[name=arms]:checked').value;
         document.getElementById("climate_error").innerHTML = climateError;
         submit = false;
     }
+        else {
+            document.getElementById("climate_error").innerHTML = "";
+        }
 
    if (roll == null || roll == "") {
       rollError = "<p class='alert alert-danger'>Please enter your selection</p>";
