@@ -61,7 +61,7 @@
         <div class = "row col-sm-12 quiz-container">
             <div id="climate_error"></div>
             <h2>The climate where we live is mostly:</h2>
-            <ul>
+            <ul id="climate">
                 <li><input type="radio" name="climate" value="fleece"> Cold </li>
                 <li><input type="radio" name="climate" value="fleece"> Cool</li> 
                 <li><input type="radio" name="climate" value="cotton"> Warm </li>
@@ -114,23 +114,38 @@ var arms = document.querySelector('input[name=arms]:checked').value;
   var email = document.getElementById('email').value;
   var childname = document.getElementById('ChildsName').value;
   
-  function validateForm(roll, climate) {
+  function validateForm(climate) {
+    var submit = true;
 
+    if (climate == null || climate == "") {
+        climateError = "<p class='alert alert-danger'>Please enter your name</p>";
+        document.getElementById("climate_error").innerHTML = climateError;
+        submit = false;
+    }
 
-if (climate == null || climate == "") {
-    climateError = "<p class='alert alert-danger'> Please select an option.</p>";
-    document.getElementById("climate_error").innerHTML = climateError; 
-    return false;
+   // if (y == null || y == "") {
+     //   emailError = "Please enter your email";
+       // document.getElementById("email_error").innerHTML = emailError;
+        //submit = false;
+   // }
+
+    //if (z == null || z == "") {
+      //  telephoneError = "Please enter your telephone";
+        //document.getElementById("telephone_error").innerHTML = telephoneError;
+        //submit = false;
+    //}
+
+    return submit;
 }
 
-if (roll == null || roll == "") {
-    rollError = "<p class='alert alert-danger'> Please select an option.</p>";
-    document.getElementById("roll_error").innerHTML = rollError; 
-    return false;
-} 
+function removeWarning() {
+    document.getElementById(this.id + "_error").innerHTML = "";
+}
 
-else {return true;}
-};
+document.getElementById("climate").onkeyup = removeWarning;
+//document.getElementById("email").onkeyup = removeWarning;
+//document.getElementById("telephone").onkeyup = removeWarning;
+
 
 function go (arms,roll,climate,quizanswers,email,childname) {
   // (A) VARIABLES TO PASS
