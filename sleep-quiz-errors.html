@@ -58,7 +58,7 @@
         </div>
 
     
-        <div class = "row col-sm-12 quiz-container">
+        <div id ="climate_error" class = "row col-sm-12 quiz-container">
             <h2>The climate where we live is mostly:</h2>
             <ul>
                 <li><input type="radio" name="climate" value="fleece"> Cold </li>
@@ -117,7 +117,7 @@ var arms = document.querySelector('input[name=arms]:checked').value;
 
 if (climate == null || climate == "") {
     nameError = "Please select an option";
-    document.getElementById("name_error").innerHTML = nameError; 
+    document.getElementById("climate_error").innerHTML = nameError; 
     return false;
 } 
 
