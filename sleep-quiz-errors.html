@@ -59,8 +59,8 @@
 
     
         <div class = "row col-sm-12 quiz-container">
-            <div id="climate_error" class="alert alert-danger">
-                
+            <div id="climate_error">
+
             </div>
             <h2>The climate where we live is mostly:</h2>
             <ul>
@@ -119,7 +119,7 @@ var arms = document.querySelector('input[name=arms]:checked').value;
 
 
 if (climate == null || climate == "") {
-    nameError = "Please select an option";
+    nameError = "<p class='alert alert-danger'> Please select an option.</p>";
     document.getElementById("climate_error").innerHTML = nameError; 
     return false;
 } 
