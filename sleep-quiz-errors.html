@@ -124,7 +124,7 @@ var arms = document.querySelector('input[name=arms]:checked').value;
         document.getElementById("climate_error").innerHTML = climateError;
         submit = false;
     }
-        else {
+        else if (climate != null || climate != "") {
             document.getElementById("climate_error").innerHTML = "";
         }
 
