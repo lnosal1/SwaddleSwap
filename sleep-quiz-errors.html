@@ -143,14 +143,15 @@ var arms = document.querySelector('input[name=arms]:checked').value;
     }
 
     return submit;
+    document.getElementById("email").onkeyup = removeWarning(this.id);
 }
 
-function removeWarning() {
-    document.getElementById(this.id + "_error").innerHTML = "";
+function removeWarning(message) {
+    document.getElementById(message + "_error").innerHTML = "";
 }
 
 //document.getElementById("climate").onkeyup = removeWarning;
-document.getElementById("email").onkeyup = removeWarning;
+
 //document.getElementById("telephone").onkeyup = removeWarning;
 
 
