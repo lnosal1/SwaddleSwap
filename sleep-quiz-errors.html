@@ -116,9 +116,12 @@ var arms = document.querySelector('input[name=arms]:checked').value;
   var email = document.getElementById('email').value;
   var childname = document.getElementById('ChildsName').value;
   
-  function validateForm(climate, roll,arms, email) {
+  function validateForm() {
     var submit = true;
-
+    var arms = document.querySelector('input[name=arms]:checked').value;
+    var roll = document.querySelector('input[name=roll]:checked').value;
+    var climate = document.querySelector('input[name=climate]:checked').value;
+    var email = document.getElementById('email').value;
     if (climate == null || climate == "") {
         climateError = "<p class='alert alert-danger'>Please enter your selection</p>";
         document.getElementById("climate_error").innerHTML = climateError;
