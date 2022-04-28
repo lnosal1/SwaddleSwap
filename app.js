@@ -101,8 +101,6 @@ function appendData(data) {
         mainContainer3.appendChild(button3);
         recommendedAPI (email, quizanswers, childname, Name, buttonLink, Name2, buttonLink2, Name3, buttonLink3);
 
-        var headertext = document.getElementById("heading");
-        headertext.innerHTML = "Recommended Swaddles for " + childname;
         
     
 }}
